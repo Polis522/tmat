@@ -1,0 +1,35 @@
+@font-face {font-family: Play;src: url(Play.ttf);}
+@font-face {font-family: PlayBold;src: url(Play-Bold.ttf);}
+@font-face {font-family: Marmelad;src: url(Marmelad.ttf);}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+nav ul li {
+	cursor: pointer;
+	line-height: 60px;
+}
+nav img{
+	width: 60px;
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+	nav, ul {
+		flex-direction: column;
+	}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	nav, ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	nav ul {
+		list-style-type: none;
+		text-transform: uppercase;
+	}
+}
